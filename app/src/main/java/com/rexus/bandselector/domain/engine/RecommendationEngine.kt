@@ -2,7 +2,6 @@ package com.rexus.bandselector.domain.engine
 
 import com.rexus.bandselector.data.model.NetworkType
 import com.rexus.bandselector.data.model.SignalMetrics
-import javax.inject.Inject
 
 class RecommendationEngine {
 

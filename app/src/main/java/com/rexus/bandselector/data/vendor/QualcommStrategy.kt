@@ -3,7 +3,6 @@ package com.rexus.bandselector.data.vendor
 import com.rexus.bandselector.data.model.NetworkType
 import com.rexus.bandselector.data.root.RootService
 import com.rexus.bandselector.domain.BandController
-import javax.inject.Inject
 
 class QualcommStrategy : BandController {
     

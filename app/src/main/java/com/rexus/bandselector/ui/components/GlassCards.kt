@@ -48,7 +48,7 @@ fun OxygenGlassCard(
                 }
                 // Clip purely for the blur
                 clip = true
-                componentAlpha = 0.99f // Force layer
+                alpha = 0.99f // Force layer
             }
             .clip(RoundedCornerShape(24.dp))
             .background(Color.Transparent) // The blur must see what's behind

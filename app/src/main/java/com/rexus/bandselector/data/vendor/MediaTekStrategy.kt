@@ -26,7 +26,7 @@ class MediaTekStrategy : BandController {
         val injectionCmd = "atcid $atCmd" // atcid is a common binary on MTK
         
         val result = RootService.run(injectionCmd)
-        return if (result.isSuccess) Result.success(Unit) else Result.failure(Exception(result.getStderr()))
+        return if (result.isSuccess) Result.success(Unit) else Result.failure(Exception(result.err.joinToString("\n")))
     }
 
     override suspend fun resetNetwork(): Result<Unit> {
